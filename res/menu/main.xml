@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.gmy.cnmo.MainActivity" >
+
+    <item
+        android:id="@+id/menu_favorites"
+        android:icon="@drawable/menu_favorites"
+        android:orderInCategory="1"
+        android:title="@string/menu_favorites"/>
+    <item
+        android:id="@+id/menu_apps_recommended"
+        android:icon="@drawable/menu_apps_recommended"
+        android:orderInCategory="2"
+        android:title="@string/menu_apps_recommended"/>
+    <item
+        android:id="@+id/menu_update"
+        android:icon="@drawable/menu_update"
+        android:orderInCategory="3"
+        android:title="@string/menu_update"/>
+    <item
+        android:id="@+id/menu_settings"
+        android:icon="@drawable/menu_settings"
+        android:orderInCategory="4"
+        android:title="@string/menu_settings"/>
+    <item
+        android:id="@+id/menu_about"
+        android:icon="@drawable/about"
+        android:orderInCategory="5"
+        android:title="@string/menu_about"/>
+    <item
+        android:id="@+id/menu_exit"
+        android:icon="@drawable/menu_exit"
+        android:orderInCategory="6"
+        android:title="@string/menu_exit"/>
+
+</menu>

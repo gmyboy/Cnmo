@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg" >
+
+    <ImageView
+        android:id="@+id/login_img_log"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46.0dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logon_top" />
+
+    <LinearLayout
+        android:id="@+id/login_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_img_log"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginRight="30.0dip"
+        android:layout_marginTop="34.0dip"
+        android:background="@drawable/corner_list_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginTop="6.0dip"
+            android:layout_weight="1.0"
+            android:gravity="fill_vertical" >
+
+            <TextView
+                style="@style/set_content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2.0dip"
+                android:gravity="center"
+                android:text="@string/login_username" />
+
+            <EditText
+                android:id="@+id/login_edit_username"
+                style="@style/login_text_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:hint="@string/login_hint_username"
+                android:imeOptions="actionNext" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginRight="1.0dip"
+            android:background="#ffe3e3e3" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginTop="6.0dip"
+            android:layout_weight="1.0"
+            android:gravity="fill_vertical" >
+
+            <TextView
+                style="@style/set_content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2.0dip"
+                android:gravity="center"
+                android:text="@string/login_password" />
+
+            <EditText
+                android:id="@+id/login_edit_password"
+                style="@style/login_text_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:hint="@string/login_hint_password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_layout_top"
+        android:layout_marginLeft="40.0dip"
+        android:layout_marginRight="40.0dip"
+        android:layout_marginTop="36.0dip"
+        android:background="@drawable/login_submit"
+        android:text="@string/login_btn_submit"
+        android:textColor="#ff2e2e2d"
+        android:textSize="18.0sp" />
+
+    <TextView
+        android:id="@+id/login_text_register"
+        style="@style/login_text_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_register" />
+
+</RelativeLayout>

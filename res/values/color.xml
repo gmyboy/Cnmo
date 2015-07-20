@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="touming">#00000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="set_text_color">#ff000000</color>
+    <color name="dialog_button_text">#ff666666</color>
+    <color name="base_bg">#ffe3e3e3</color>
+    <color name="grey">#ff919192</color>
+    <color name="degrey">#ff545454</color>
+    <color name="drop_down_list_header_font_color">#000000</color>
+    <!-- drop down list header second font color -->
+    <color name="drop_down_list_header_second_font_color">#000000</color>
+    <!-- drop down list footer font color -->
+    <color name="drop_down_list_footer_font_color">#000000</color>
+
+</resources>

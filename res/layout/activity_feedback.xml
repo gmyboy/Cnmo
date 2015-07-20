@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffe3e3e3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/fed_layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/group_toptitlebar_bg" >
+
+        <Button
+            android:id="@+id/fed_imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_button" />
+
+        <TextView
+            android:id="@+id/fed_txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/feedback_title"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/fed_editFeedContent"
+        android:layout_width="fill_parent"
+        android:layout_height="200.0dip"
+        android:layout_below="@+id/fed_layout_top"
+        android:layout_margin="20.0dip"
+        android:background="@drawable/edittext_bg"
+        android:gravity="top"
+        android:hint="@string/feedback_content_hint"
+        android:padding="10.0dip"
+        android:textColor="#ff333333"
+        android:textSize="14.0sp" />
+
+    <TextView
+        android:id="@+id/fed_txtTitleEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fed_editFeedContent"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:text="@string/feedback_email_title"
+        android:textColor="#ff333333"
+        android:textSize="16.0sp" />
+
+    <EditText
+        android:id="@+id/fed_editUserContact"
+        android:layout_width="fill_parent"
+        android:layout_height="38.0dip"
+        android:layout_below="@+id/fed_txtTitleEmail"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:background="@drawable/edittext_bg"
+        android:gravity="center_vertical"
+        android:hint="@string/feedback_email_hint"
+        android:paddingLeft="10.0dip"
+        android:textColor="#ff999999"
+        android:textSize="14.0sp" />
+
+    <Button
+        android:id="@+id/fed_btnSubmit"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_below="@+id/fed_editUserContact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/download_button"
+        android:text="@string/feedback_comment_request"
+        android:textColor="@color/dialog_button_text" />
+
+</RelativeLayout>

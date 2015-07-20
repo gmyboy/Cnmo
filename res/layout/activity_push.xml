@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe3e3e3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/push_layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gyj_title" >
+
+        <Button
+            android:id="@+id/push_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button" />
+
+        <TextView
+            android:id="@+id/push_text_toptitle"
+            style="@style/main_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="@string/set_text_push_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/push_layout_one"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/push_title" >
+
+        <TextView
+            android:id="@+id/push_text_pushtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="11.0dip"
+            android:singleLine="true"
+            android:text="@string/set_text_push_setting"
+            android:textColor="#ffffffff"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/push_layout_push_remind"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_text_bg"
+        android:clickable="false" >
+
+        <TextView
+            android:id="@+id/push_text_push_remind"
+            style="@style/set_content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="推送提醒设置" />
+
+        <CheckBox
+            android:id="@+id/push_checkbox_push_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7.0dip"
+            android:layout_marginTop="7.0dip"
+            android:checked="true"
+            android:focusable="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/push_layout_time_setting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_text_bg" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/push_text_time_setting"
+                style="@style/set_content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="静音时间段" />
+
+            <TextView
+                android:id="@+id/push_text_time_setting_index"
+                style="@style/set_content_text_introduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/push_text_time_setting"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="每日22:00-次日7:00" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/push_btn_time_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15.0dip"
+            android:background="@drawable/preference_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/push_layout_sound_setting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_text_bg" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/push_text_sound_setting"
+                style="@style/set_content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="声音" />
+
+            <TextView
+                android:id="@+id/push_text_sound_setting_index"
+                style="@style/set_content_text_introduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/push_text_sound_setting"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="设置声音提醒" />
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/push_checkbax_sound_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7.0dip"
+            android:layout_marginTop="7.0dip"
+            android:checked="true"
+            android:clickable="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/push_layout_vibration_setting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_text_bg" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/push_text_vibration_setting"
+                style="@style/set_content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="震动" />
+
+            <TextView
+                android:id="@+id/push_text_vibration_setting_index"
+                style="@style/set_content_text_introduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/push_text_vibration_setting"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="设置震动提醒" />
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/push_checkbox_vibration_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7.0dip"
+            android:layout_marginTop="7.0dip"
+            android:checked="false"
+            android:clickable="false" />
+    </RelativeLayout>
+
+</LinearLayout>

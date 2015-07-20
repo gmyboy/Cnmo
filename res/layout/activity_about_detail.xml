@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/detail_layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gyj_title" >
+
+        <Button
+            android:id="@+id/detail_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button" />
+
+        <TextView
+            android:id="@+id/detail_toptitle"
+            style="@style/main_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="@string/about_title" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/detail_servicetitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:lineSpacingExtra="3.0dip"
+        android:textColor="@color/set_text_color"
+        android:textSize="15.0sp" />
+
+    <TextView
+        android:id="@+id/detail_service"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_servicetitle"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:lineSpacingExtra="3.0dip"
+        android:textColor="@color/dialog_button_text"
+        android:textSize="13.0sp" />
+
+</LinearLayout>

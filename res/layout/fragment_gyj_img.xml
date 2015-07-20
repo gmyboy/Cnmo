@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gmy.cnmo.view.PullToRefreshView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gyj_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gyj_bj" >
+
+    <GridView
+        android:id="@+id/gyj_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:numColumns="2"
+        android:verticalSpacing="15.0dip" >
+    </GridView>
+
+</com.gmy.cnmo.view.PullToRefreshView>

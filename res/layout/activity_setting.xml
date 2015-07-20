@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe3e3e3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/set_layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gyj_title" >
+
+        <Button
+            android:id="@+id/set_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button" />
+
+        <TextView
+            android:id="@+id/set_text_toptitle"
+            style="@style/main_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="@string/set_top_title" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/set_layout_one"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/push_title" >
+
+                <TextView
+                    android:id="@+id/set_text_pushtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="11.0dip"
+                    android:singleLine="true"
+                    android:text="@string/set_text_pushtitle"
+                    android:textColor="#ffffffff"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/set_layout_user_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/account_bg" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true" >
+
+                    <TextView
+                        android:id="@+id/set_text_username"
+                        style="@style/set_content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:singleLine="true"
+                        android:text="@string/set_account_state" />
+
+                    <TextView
+                        android:id="@+id/set_text_account_instroduction"
+                        style="@style/set_content_text_introduce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/set_text_username"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:singleLine="true"
+                        android:text="@string/set_account_instroduction" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/set_btn_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21.0dip"
+                    android:background="@drawable/setting_login_btn_selector"
+                    android:gravity="center"
+                    android:text="@string/set_btn_login"
+                    android:textColor="#ffffffff"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/set_layout_size"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/push_title" >
+
+                <TextView
+                    android:id="@+id/set_text_size_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="11.0dip"
+                    android:singleLine="true"
+                    android:text="@string/set_text_size_title"
+                    android:textColor="#ffffffff"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/set_layout_size_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_text_bg"
+                android:clickable="true" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true" >
+
+                    <TextView
+                        android:id="@+id/set_text_size_setting"
+                        style="@style/set_content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:singleLine="true"
+                        android:text="@string/set_text_size_setting" />
+
+                    <TextView
+                        android:id="@+id/set_text_size_index"
+                        style="@style/set_content_text_introduce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/set_text_size_setting"
+                        android:layout_marginLeft="10.0dip"
+                        android:singleLine="true"
+                        android:text="@string/set_text_size_index" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/set_btn_time_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/preference_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/set_layout_3g"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/push_title" >
+
+                <TextView
+                    android:id="@+id/set_text_3g_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="11.0dip"
+                    android:singleLine="true"
+                    android:text="@string/set_text_3g_title"
+                    android:textColor="#ffffffff"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/set_layout_wifi_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_text_bg"
+                android:clickable="true" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true" >
+
+                    <TextView
+                        android:id="@+id/set_text_wifi_setting"
+                        style="@style/set_content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:singleLine="true"
+                        android:text="@string/set_text_wifi_setting" />
+
+                    <TextView
+                        android:id="@+id/set_text_wifi_index"
+                        style="@style/set_content_text_introduce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/set_text_wifi_setting"
+                        android:layout_marginLeft="10.0dip"
+                        android:singleLine="true"
+                        android:text="@string/set_text_wifi_index" />
+                </RelativeLayout>
+
+                <CheckBox
+                    android:id="@+id/set_checkbox_wifi_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7.0dip"
+                    android:checked="true"
+                    android:clickable="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/set_layout_3g_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_text_bg"
+                android:clickable="true" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true" >
+
+                    <TextView
+                        android:id="@+id/set_text_3g_setting"
+                        style="@style/set_content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:singleLine="true"
+                        android:text="@string/set_text_3g_setting" />
+
+                    <TextView
+                        android:id="@+id/set_text_3g_index"
+                        style="@style/set_content_text_introduce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/set_text_3g_setting"
+                        android:layout_marginLeft="10.0dip"
+                        android:singleLine="true"
+                        android:text="@string/set_text_3g_index" />
+                </RelativeLayout>
+
+                <CheckBox
+                    android:id="@+id/set_checkbox_3g_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7.0dip"
+                    android:checked="true"
+                    android:clickable="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/set_layout_cache_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_text_bg"
+                android:clickable="true" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true" >
+
+                    <TextView
+                        android:id="@+id/set_text_offline_setting"
+                        style="@style/set_content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:singleLine="true"
+                        android:text="@string/set_text_offline" />
+
+                    <TextView
+                        android:id="@+id/set_text_offline_index"
+                        style="@style/set_content_text_introduce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/set_text_offline_setting"
+                        android:layout_marginLeft="10.0dip"
+                        android:singleLine="true"
+                        android:text="@string/set_text_offline_doc" />
+                </RelativeLayout>
+
+                <CheckBox
+                    android:id="@+id/set_checkbox_offline_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7.0dip"
+                    android:checked="true"
+                    android:clickable="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/set_layout_clean_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_text_bg"
+                android:clickable="true" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true" >
+
+                    <TextView
+                        android:id="@+id/set_text_clean_setting"
+                        style="@style/set_content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:singleLine="true"
+                        android:text="@string/set_text_clean_setting" />
+
+                    <TextView
+                        android:id="@+id/set_text_clean_index"
+                        style="@style/set_content_text_introduce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/set_text_clean_setting"
+                        android:layout_marginLeft="10.0dip"
+                        android:singleLine="true"
+                        />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/set_btn_clean_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/preference_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/set_layout_push"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/push_title" >
+
+                <TextView
+                    android:id="@+id/set_text_push_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="11.0dip"
+                    android:singleLine="true"
+                    android:text="@string/set_text_push_title"
+                    android:textColor="#ffffffff"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/set_layout_push_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_text_bg"
+                android:clickable="true" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true" >
+
+                    <TextView
+                        android:id="@+id/set_text_push_setting"
+                        style="@style/set_content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:singleLine="true"
+                        android:text="@string/set_text_push_setting" />
+
+                    <TextView
+                        android:id="@+id/set_text_push_index"
+                        style="@style/set_content_text_introduce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/set_text_push_setting"
+                        android:layout_marginLeft="10.0dip"
+                        android:singleLine="true"
+                        android:text="@string/set_text_push_index" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/set_btn_push_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/preference_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/set_layout_soft"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/push_title" >
+
+                <TextView
+                    android:id="@+id/set_text_soft_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="11.0dip"
+                    android:singleLine="true"
+                    android:text="@string/set_text_softinfo_title"
+                    android:textColor="#ffffffff"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/set_layout_objection_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_text_bg"
+                android:clickable="true" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true" >
+
+                    <TextView
+                        android:id="@+id/set_text_objection_setting"
+                        style="@style/set_content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:singleLine="true"
+                        android:text="@string/set_text_idea_setting" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/set_btn_objection_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/preference_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/set_layout_new_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_text_bg"
+                android:clickable="true" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true" >
+
+                    <TextView
+                        android:id="@+id/set_text_new_setting"
+                        style="@style/set_content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:singleLine="true"
+                        android:text="@string/set_text_fingerpost_setting" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/set_btn_new_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/preference_right" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

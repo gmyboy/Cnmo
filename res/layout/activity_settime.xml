@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe3e3e3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/time_layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gyj_title" >
+
+        <Button
+            android:id="@+id/time_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button" />
+
+        <TextView
+            android:id="@+id/time_text_toptitle"
+            style="@style/main_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="@string/set_text_push_time_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/time_layout_one"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/push_title" >
+
+        <TextView
+            android:id="@+id/time_text_pushtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="11.0dip"
+            android:singleLine="true"
+            android:text="@string/set_text_push_time_title"
+            android:textColor="#ffffffff"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/push_layout_push_remind"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_text_bg" >
+
+        <TextView
+            android:id="@+id/time_text_pre"
+            style="@style/set_content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10.0dip"
+            android:hint="前时间段"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="30dip"
+            android:layout_height="1.0dip"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginRight="1.0dip"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/time_text_next"
+            style="@style/set_content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10.0dip"
+            android:hint="后时间段"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/list_selecter_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rec_layout_topbar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gyj_title" >
+
+        <Button
+            android:id="@+id/rec_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button" />
+
+        <TextView
+            android:id="@+id/rec_text_toptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="@string/app_recommend"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/rec_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rec_layout_topbar1"
+        android:layout_centerHorizontal="true" >
+
+        <RelativeLayout
+            android:id="@+id/rec_linRoot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top" >
+
+            <com.gmy.cnmo.view.AdapterToScrollViewListView
+                android:id="@+id/rec_mlist_recommend"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="3dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dip"
+                android:layout_below="@+id/rec_mlist_recommend"
+                android:background="#e3e3e3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/rec_txtDownloadApp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dip"
+                    android:gravity="center"
+                    android:text="@string/app_recommend_txt"
+                    android:textColor="#0000ff"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/listview_divider_line" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

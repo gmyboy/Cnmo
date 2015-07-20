@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/about_layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gyj_title" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button" />
+
+        <TextView
+            android:id="@+id/about_toptitle"
+            style="@style/main_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="@string/about_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_layout_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/navi_bg"
+        android:paddingBottom="1.0dip" >
+
+        <TextView
+            android:id="@+id/about_messagetitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:lineSpacingExtra="3.0dip"
+            android:text="简介:"
+            android:textColor="@color/set_text_color"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/about_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_messagetitle"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:lineSpacingExtra="3.0dip"
+            android:text="@string/about_message"
+            android:textColor="@color/dialog_button_text"
+            android:textSize="13.0sp" />
+
+        <include
+            android:id="@+id/line1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_message"
+            layout="@layout/line" />
+
+        <RelativeLayout
+            android:id="@+id/relViewVersion"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_below="@id/line1" >
+
+            <TextView
+                android:id="@+id/about_version"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:layout_marginRight="30.0dip"
+                android:gravity="left|center"
+                android:paddingLeft="5.0dip"
+                android:text="@string/about_message_version"
+                android:textColor="@color/set_text_color"
+                android:textSize="13.0dip" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/line2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relViewVersion"
+            layout="@layout/line" />
+
+        <RelativeLayout
+            android:id="@+id/relWebSite"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_below="@id/line2" >
+
+            <TextView
+                android:id="@+id/about_website"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:layout_marginLeft="1.0dip"
+                android:layout_marginRight="30.0dip"
+                android:gravity="left|center"
+                android:paddingLeft="5.0dip"
+                android:text="@string/about_message_wesite"
+                android:textColor="@color/set_text_color"
+                android:textSize="13.0dip" />
+
+            <ImageView
+                android:layout_width="15.0dip"
+                android:layout_height="17.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20.0dip"
+                android:src="@drawable/preference_right" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/navi_bg"
+        android:paddingBottom="1.0dip" >
+
+        <RelativeLayout
+            android:id="@+id/relServerMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip" >
+
+            <TextView
+                android:id="@+id/about_servicemessage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="30.0dip"
+                android:gravity="left|center"
+                android:paddingLeft="5.0dip"
+                android:text="@string/about_message_service_message"
+                android:textColor="@color/set_text_color"
+                android:textSize="13.0dip" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="15.0dip"
+                android:layout_height="17.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20.0dip"
+                android:src="@drawable/preference_right" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/line3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relServerMessage"
+            layout="@layout/line" />
+
+        <RelativeLayout
+            android:id="@+id/relServiceStatement"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_below="@id/line3" >
+
+            <TextView
+                android:id="@+id/about_servicestatement"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:layout_marginLeft="1.0dip"
+                android:layout_marginRight="30.0dip"
+                android:gravity="left|center"
+                android:paddingLeft="5.0dip"
+                android:text="@string/about_message_service_Statement"
+                android:textColor="@color/set_text_color"
+                android:textSize="13.0dip" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="15.0dip"
+                android:layout_height="17.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20.0dip"
+                android:src="@drawable/preference_right" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
