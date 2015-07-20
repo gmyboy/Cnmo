@@ -2,10 +2,10 @@
 A News client of Mobile China
 
 ##Screen shots
-<img src="https://github.com/gmyboy/VoiceRecord/blob/master/screenshots/main.png" width = "300" height = "572" alt="demo1" align=center />
-<img src="https://github.com/gmyboy/VoiceRecord/blob/master/screenshots/main2.png" width = "300" height = "572" alt="demo2" align=center />
-<img src="https://github.com/gmyboy/VoiceRecord/blob/master/screenshots/main3.png" width = "300" height = "572" alt="demo3" align=center />
-<img src="https://github.com/gmyboy/VoiceRecord/blob/master/screenshots/main4.png" width = "300" height = "572" alt="demo3" align=center />
+<img src="https://github.com/gmyboy/Cnmo/blob/master/screenshots/main.png" width = "300" height = "572" alt="demo1" align=center />
+<img src="https://github.com/gmyboy/Cnmo/blob/master/screenshots/main2.png" width = "300" height = "572" alt="demo2" align=center />
+<img src="https://github.com/gmyboy/Cnmo/blob/master/screenshots/main3.png" width = "300" height = "572" alt="demo3" align=center />
+<img src="https://github.com/gmyboy/Cnmo/blob/master/screenshots/main4.png" width = "300" height = "572" alt="demo3" align=center />
 
 
 
